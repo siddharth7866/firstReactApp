@@ -55,7 +55,7 @@ function Pizza() {
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
-  <reactstrict>
+  <React.StrictMode>
     <App />
-  </reactstrict>
+  </React.StrictMode>
 );
