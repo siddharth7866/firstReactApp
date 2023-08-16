@@ -2,13 +2,32 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 function App() {
-  const sid = "siddharth";
+  // const sid = "siddharth";
   return (
     <div>
-      <h1>Hello React! How are you {sid}!</h1>
+      <Header />
+      <Menu />
+      <Footer />
+    </div>
+  );
+}
+function Header() {
+  return <h1>Welcome To Pizzeria Cafe</h1>;
+}
+
+function Menu() {
+  return (
+    <div>
       <Pizza />
       <Pizza />
       <Pizza />
+    </div>
+  );
+}
+function Footer() {
+  return (
+    <div>
+      <footer>{new Date().toLocaleTimeString()} Restaurant is open!</footer>
     </div>
   );
 }
