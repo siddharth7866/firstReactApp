@@ -1,8 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import "./index.css";
 
 function App() {
   // const sid = "siddharth";
+
   return (
     <div>
       <Header />
@@ -25,6 +27,12 @@ function Menu() {
   );
 }
 function Footer() {
+  const hours = new Date().getHours();
+  const openHours = 11;
+  const closeHours = 22;
+  const isOpen = hours >= openHours && hours <= closeHours;
+  console.log(isOpen);
+
   return (
     <div>
       <footer>{new Date().toLocaleTimeString()} Restaurant is open!</footer>
